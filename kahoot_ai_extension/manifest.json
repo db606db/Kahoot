@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Kahoot IA Auto Answer",
+  "version": "1.0",
+  "description": "Affiche automatiquement la réponse détectée par l’IA aux questions de Kahoot.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://play.kahoot.it/*"
+  ],
+  "action": {
+    "default_title": "Kahoot IA Helper"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://play.kahoot.it/*"
+      ],
+      "js": [
+        "config.js",
+        "content.js"
+      ]
+    }
+  ]
+}
+

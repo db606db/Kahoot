@@ -1,0 +1,2 @@
+
+const OPENAI_API_KEY = "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";
